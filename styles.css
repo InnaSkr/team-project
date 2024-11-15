@@ -25,7 +25,7 @@ a {
 
 
 .section {
-    max-width: 1280px;
+    min-width: 1280;
     font-family: "Gilroy", sans-serif; 
     margin: 0;
 }
@@ -72,6 +72,11 @@ a {
         flex-direction: column;
         gap: 20px;
         padding: 40px 60px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            color: rgba(12, 12, 12, 0.7);
 }           
 
 .about-us-image {
@@ -104,3 +109,30 @@ a {
     background: #1f3cd4;
 }
 
+
+@media screen and (min-width: 768px) {
+
+.section {
+    min-width: 768px;
+}
+
+.container-about-us {
+    min-width: 768px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin: 0 auto;
+}
+
+.block-1 {
+    width: 704px;
+}
+
+.block-2 {
+    max-width: 704px;
+}
+
+.about-us-image {
+    min-width: 704px;
+    height: 100%;
+}
+}
