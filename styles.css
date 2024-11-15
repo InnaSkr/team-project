@@ -1,0 +1,97 @@
+body {
+    font-family: "Gilroy", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left:  65px;
+    padding-right: 65px;
+    font-family: "Gilroy", sans-serif;
+   
+}
+
+
+.container {
+    max-width: 1280px;
+    display: flex;
+    gap: 40px;
+        flex-direction: row;
+
+}
+
+
+.block-1 {
+    max-width: 580px;
+    display: flex;
+        gap: 40px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+
+}
+
+.about-us-title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+        font-size: 48px;
+        line-height: 0.91667;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+}
+
+.button {
+     border-radius: 16px;
+        width: 160px;
+        height: 48px;
+        background: #3350e9;
+}
+
+.about-us-text {
+    width: 460px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.about-us-image {
+    border-radius: 50px;
+        width: 530px;
+        height: 100%;
+        background: rgba(12, 12, 12, 0.2);
+}
+
+.wrist-watch-img {
+    display: block;
+    margin: 0 right;
+}
