@@ -25,38 +25,31 @@ a {
 
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left:  65px;
-    padding-right: 65px;
-    font-family: "Gilroy", sans-serif;
-   
+    max-width: 1280px;
+    font-family: "Gilroy", sans-serif; 
+    margin: 0;
 }
 
 
-.container {
-    max-width: 1280px;
+.container-about-us {
+   max-width: 1280px;
     display: flex;
     gap: 40px;
-        flex-direction: row;
-
+    margin: 0 auto;
+    padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 65px;
+        padding-right: 65px;
+      
 }
 
 
 .block-1 {
-    max-width: 580px;
-    display: flex;
-        gap: 40px;
-        flex-direction: row;
+    width: 580px;
         align-items: flex-start;
         justify-content: flex-start;
-}
-
-.block-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-
+        background: rgba(243, 243, 243, 1);
+        border-radius: 50px;
 
 }
 
@@ -67,22 +60,19 @@ a {
         line-height: 0.91667;
         letter-spacing: -0.02em;
         color: #0c0c0c;
+        padding-top: 80px;
+        padding-left: 60px;
 }
 
-.button {
-     border-radius: 16px;
-        width: 160px;
-        height: 48px;
-        background: #3350e9;
-}
 
 .about-us-text {
-    width: 460px;
-}
-
-.image-container {
-    display: flex;
-}
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 60px;
+}           
 
 .about-us-image {
     border-radius: 50px;
@@ -91,7 +81,26 @@ a {
         background: rgba(12, 12, 12, 0.2);
 }
 
-.wrist-watch-img {
-    display: block;
-    margin: 0 right;
+
+.catalog-btn {
+    border-radius: 16px;
+        width: 160px;
+        height: 48px;
+        background: #3350e9;
+        border: none;
+        cursor: pointer;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+            font-size: 14px;
+            line-height: 1.28571;
+            text-align: center;
+            color: #fbfbfb;
+            margin-left: 60px;
+            margin-bottom: 80px;
 }
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+    background: #1f3cd4;
+}
+
