@@ -39,22 +39,33 @@
                 less than the best?</span
               >
             </p>
-            <a href="#catalog" class="catalog-anchor-link">
-              <button type="button" class="catalog-btn">View Catalog</button>
-            </a>
+            <a href="#catalog" class="catalog-anchor-link"></a>
+            <button type="button" class="catalog-btn">View Catalog</button>
           </div>
           <div class="block-2">
-            <img
-              srcset="
-                ./images/wrist-watch-1x.jpg 1x,
-                ./images/wrist-watch-2x.jpg 2x
-              "
-              src="./images/wrist-watch-1x.jpg"
-              alt="wrist-watch"
-              width="532"
-              height="530"
-              class="wrist-watch-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/wrist-watch-1x.jpg 1x,
+                  ./images/wrist-watch-2x.jpg 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/wrist-watch-1x.jpg 1x,
+                  ./images/wrist-watch-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/wrist-watch-1x.jpg"
+                alt="wrist-watch"
+                width="532"
+                height="530"
+                class="wrist-watch-img"
+              />
+            </picture>
           </div>
         </div>
       </section>
