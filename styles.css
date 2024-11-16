@@ -23,69 +23,50 @@ a {
 }
 
 
-
-.section {
-    min-width: 1280;
-    font-family: "Gilroy", sans-serif; 
-    margin: 0;
-}
-
-
-.container-about-us {
-   max-width: 1280px;
-    display: flex;
-    gap: 40px;
-    margin: 0 auto;
-    padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 65px;
-        padding-right: 65px;
+.container {
+        min-width: 320px;
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: flex-start;
+        display: flex;
+            flex-direction: column;
+            gap: 20px;
+    }
       
-}
-
 
 .block-1 {
-    width: 580px;
-        align-items: flex-start;
-        justify-content: flex-start;
+   width: 335px;
+    align-items: flex-start;
         background: rgba(243, 243, 243, 1);
-        border-radius: 50px;
-
+        border-radius: 30px;
+        
 }
 
 .about-us-title {
     font-family: "Gilroy", sans-serif;
     font-weight: 600;
-        font-size: 48px;
-        line-height: 0.91667;
-        letter-spacing: -0.02em;
-        color: #0c0c0c;
-        padding-top: 80px;
-        padding-left: 60px;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    padding-bottom: 28px;
+    padding-top: 40px;
 }
-
 
 .about-us-text {
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
+    min-width: 295px;
+    display: flex;
+    flex-direction: column;
         gap: 20px;
-        padding: 40px 60px;
         font-weight: 500;
-            font-size: 16px;
-            line-height: 1.25;
+            font-size: 14px;
+            line-height: 1.28;
             letter-spacing: -0.02em;
             color: rgba(12, 12, 12, 0.7);
-}           
-
-.about-us-image {
-    border-radius: 50px;
-        width: 530px;
-        height: 100%;
-        background: rgba(12, 12, 12, 0.2);
+            padding-bottom: 40px;
 }
-
 
 .catalog-btn {
     border-radius: 16px;
@@ -100,39 +81,104 @@ a {
             line-height: 1.28571;
             text-align: center;
             color: #fbfbfb;
-            margin-left: 60px;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog-btn:hover,
 .catalog-btn:focus {
-    background: #1f3cd4;
+    background-color: #1f3cd4;
+}
+
+.wrist-watch-img {
+    border-radius: 30px;
+        max-width: 335px;
 }
 
 
-@media screen and (min-width: 768px) {
+    
 
-.section {
-    min-width: 768px;
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 40px;
+    }
+
+     .block-1 {
+            width: 704px;
+            border-radius: 50px;
+        }
+    
+        .wrist-watch-img {
+            max-width: 704px;
+        }
+
+        .about-us-title {
+            font-size: 48px;
+                line-height: 0.91667;
+                color: #0c0c0c;
+                padding-left: 60px;
+                padding-top: 80px;
+                padding-bottom: 0;
+        }
+        
+        .about-us-text {
+            font-size: 16px;
+            line-height: 1.25;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+
+        .catalog-btn {
+            margin-left: 60px;
+            margin-bottom: 80px;
+        
+        }
+
+        .wrist-watch-img {
+            border-radius: 50px;
+            max-width: 704px;
+        }
 }
 
-.container-about-us {
-    min-width: 768px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin: 0 auto;
-}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1280px;
+        padding-left: 65px;
+        padding-right: 65px;
+            display: flex;
+            gap: 40px;
+            margin: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 100px;
+    }
 
-.block-1 {
-    width: 704px;
-}
+    .block-1 {
+        max-width: 580px; 
+    }
 
-.block-2 {
-    max-width: 704px;
-}
-
-.about-us-image {
-    min-width: 704px;
-    height: 100%;
-}
+        .about-us-text {
+            min-width: 460px;
+            padding: 40px 60px;
+        }
+    
+        .wrist-watch-img {
+            border-radius: 50px;
+            max-width: 530px;
+            background: rgba(12, 12, 12, 0.2);
+        }
+    
+        .catalog-btn {
+            margin-left: 60px;
+            margin-bottom: 80px;
+        }
+    
 }
