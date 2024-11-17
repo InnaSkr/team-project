@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <title>Team Project - Section About Us</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -20,7 +21,7 @@
     <main>
       <section class="section about-us">
         <div class="container">
-          <div class="block-1-about-us">
+          <div class="block-about-us">
             <div class="about-us-info">
               <h3 class="about-us-title">About Us</h3>
               <p class="about-us-text">
@@ -41,27 +42,32 @@
               <button type="button" class="catalog-btn">View Catalog</button>
             </div>
           </div>
-          <div class="block-2-about-us">
+          <div class="thumb">
             <picture>
               <source
+                media="min-width: 1280px"
                 srcset="
-                  ./images/wrist-watch-1x.jpg 1x,
-                  ./images/wrist-watch-2x.jpg 2x
+                  ./images/wrist-watch-desk-1x.jpg 1x,
+                  ./images/wrist-watch-desk-2x.jpg
                 "
-                media="(max-width: 768px)"
               />
               <source
+                media="min-width: 768px"
                 srcset="
-                  ./images/wrist-watch-1x.jpg 1x,
-                  ./images/wrist-watch-2x.jpg 2x
+                  ./images/wrist-watch-tab-1x.jpg 1x,
+                  ./images/wrist-watch-tab-2x.jpg 2x
                 "
-                media="(max-width: 767px)"
+              />
+              <source
+                media="min-width: 767px"
+                srcset="
+                  ./images/wrist-watch-mob-1x.jpg 1x,
+                  ./images/wrist-watch-mob-2x.jpg 2x
+                "
               />
               <img
-                src="./images/wrist-watch-1x.jpg"
+                src="./images/wrist-watch.jpg"
                 alt="wrist-watch"
-                width="532"
-                height="530"
                 class="wrist-watch-img"
               />
             </picture>
