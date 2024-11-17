@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    font-family: 'Gilroy', sans-serif;
+    background-color: #fbfbfb;
+}
+
 body {
     font-family: "Gilroy", sans-serif;
 }
@@ -36,12 +52,15 @@ a {
     }
       
 
-.block-1 {
+.block-1-about-us {
    width: 335px;
     align-items: flex-start;
-        background: rgba(243, 243, 243, 1);
+        background: #f3f3f3;
         border-radius: 30px;
-        
+}
+
+.about-us-info {
+    padding: 40px 20px;
 }
 
 .about-us-title {
@@ -52,7 +71,6 @@ a {
     letter-spacing: -0.02em;
     color: #0c0c0c;
     padding-bottom: 28px;
-    padding-top: 40px;
 }
 
 .about-us-text {
@@ -81,7 +99,6 @@ a {
             line-height: 1.28571;
             text-align: center;
             color: #fbfbfb;
-            margin-bottom: 40px;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -108,11 +125,15 @@ a {
         gap: 40px;
     }
 
-     .block-1 {
+     .block-1-about-us {
             width: 704px;
             border-radius: 50px;
         }
-    
+        
+        .about-us-info {
+            padding: 80px 60px;
+        }
+
         .wrist-watch-img {
             max-width: 704px;
         }
@@ -121,24 +142,17 @@ a {
             font-size: 48px;
                 line-height: 0.91667;
                 color: #0c0c0c;
-                padding-left: 60px;
-                padding-top: 80px;
-                padding-bottom: 0;
+                padding-bottom: 40px;
+                gap: 40px;
+                
         }
         
         .about-us-text {
             font-size: 16px;
             line-height: 1.25;
-            padding-left: 60px;
-            padding-right: 60px;
             padding-bottom: 60px;
         }
 
-        .catalog-btn {
-            margin-left: 60px;
-            margin-bottom: 80px;
-        
-        }
 
         .wrist-watch-img {
             border-radius: 50px;
@@ -156,18 +170,15 @@ a {
         padding-right: 65px;
             display: flex;
             gap: 40px;
-            margin: 0 auto;
-            padding-top: 100px;
-            padding-bottom: 100px;
     }
 
-    .block-1 {
+    .block-1-about-us {
         max-width: 580px; 
     }
 
         .about-us-text {
             min-width: 460px;
-            padding: 40px 60px;
+            padding-bottom: 40px;
         }
     
         .wrist-watch-img {
@@ -175,10 +186,5 @@ a {
             max-width: 530px;
             background: rgba(12, 12, 12, 0.2);
         }
-    
-        .catalog-btn {
-            margin-left: 60px;
-            margin-bottom: 80px;
-        }
-    
+
 }
