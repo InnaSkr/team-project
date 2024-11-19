@@ -45,15 +45,18 @@ a {
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        
+    }
+
+    .main-about-us {
         align-items: flex-start;
-        display: flex;
+            display: flex;
             flex-direction: column;
             gap: 20px;
     }
-      
 
 .block-about-us {
-   width: 335px;
+   max-width: 335px;
     align-items: flex-start;
         background: #f3f3f3;
         border-radius: 30px;
@@ -61,6 +64,7 @@ a {
 
 .about-us-info {
     padding: 40px 20px;
+
 }
 
 .about-us-title {
@@ -107,17 +111,16 @@ a {
     background-color: #1f3cd4;
 }
 
+
 .wrist-watch-img {
     border-radius: 30px;
     display: block;
-        max-width: 100%;
+        max-width: 335px;
+        min-height: 446px;
         background: rgba(12, 12, 12, 0.2);
        
 }
 
-
-
-    
 
 
 /* Styles for Tablet devices */
@@ -126,11 +129,15 @@ a {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-        gap: 40px;
+        
     }
 
+         .main-about-us {
+            gap: 40px;
+         }
+
      .block-about-us {
-            width: 704px;
+            max-width: 704px;
             border-radius: 50px;
         }
         
@@ -138,9 +145,7 @@ a {
             padding: 80px 60px;
         }
 
-        .wrist-watch-img {
-            max-width: 704px;
-        }
+        
 
         .about-us-title {
             font-size: 48px;
@@ -158,22 +163,27 @@ a {
         }
 
 
-        .wrist-watch-img {
-            border-radius: 50px;
-        }
+                .wrist-watch-img {
+                    max-width: 704px;
+                    min-height: 512px;
+                }
+        
+
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .container {
-        display: flex;
-        flex-direction: row;
         max-width: 1280px;
         padding-left: 65px;
-        padding-right: 65px;
-            display: flex;
-            gap: 40px;
+        padding-right: 65px; 
     }
+
+        .main-about-us {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
 
     .block-about-us {
         max-width: 580px; 
@@ -186,7 +196,10 @@ a {
     
         .wrist-watch-img {
             display: block;
-            max-width: 100%;
+            max-width: 530px;
+            max-height: 532px;
             border-radius: 50px;
         }
+
+        
 }
